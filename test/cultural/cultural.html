@@ -1,0 +1,110 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>智慧文旅 多彩贵州</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <link rel="stylesheet" href="css/comon0.css">
+</head>
+<script>
+    $(window).load(function () {
+        $(".loading").fadeOut()
+    })
+
+
+    $(document).ready(function () {
+        var whei = $(window).width()
+        $("html").css({ fontSize: whei / 20 })
+        $(window).resize(function () {
+            var whei = $(window).width()
+            $("html").css({ fontSize: whei / 20 })
+        });
+    });
+</script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script language="JavaScript" src="js/js.js"></script>
+<body>
+    <div class="canvas" style="opacity: .2">
+        <iframe frameborder="0" src="js/index.html" style="width: 100%; height: 100%"></iframe>
+    </div>
+    <div class="loading">
+        <div class="loadbox"> <img src="images/loading.gif"> 页面加载中... </div>
+    </div>
+    <div class="head">
+        <h1><a>智慧文旅 多彩贵州</a></h1>
+        <a class="back-btn" href="javascript:history.back()">返回</a>
+    </div>
+    <div class="mainbox">
+        <ul class="clearfix">
+            <li>
+                <div class="boxall" style="height: 3.2rem">
+                    <div class="alltitle">文化及相关产业增加值</div>
+                    <div class="allnav" id="echart1"></div>
+                    <div class="boxfoot"></div>
+                </div>
+                <div class="boxall" style="height: 3.2rem">
+                    <div class="alltitle">贵州旅游总收入</div>
+                    <div class="allnav" id="echart2"></div>
+                    <div class="boxfoot"></div>
+                </div>
+                <div class="boxall" style="height: 3.2rem">
+                    <div style="height:100%; width: 100%;">
+                        <div class="sy" id="fb1"></div>
+                        <div class="sy" id="fb2"></div>
+                        <div class="sy" id="fb3"></div>
+                    </div>
+                    <div class="boxfoot">
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="bar">
+                    <div class="barbox">
+                        <ul class="clearfix">
+                            <li class="pulll_left counter">8120900</li>
+                            <li class="pulll_left counter">29100000</li>
+                        </ul>
+                    </div>
+                    <div class="barbox2">
+                        <ul class="clearfix">
+                            <li class="pulll_left">2023年旅游总收入情况（万元） </li>
+                            <li class="pulll_left">2023年旅游总人次情况（人）</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="video-box">
+                    <video  controls  >
+                        <source src="../cultural/images/文旅.webm" type="video/webm" autoplay="autoplay" >  overflow: hidden; 
+                   </video>
+                </div>
+                <div class="text-overlay">注释：视频源于网络，如有侵权请联系删除</div>
+            </li>
+            <li>
+                <div class="boxall" style="height:3.4rem">
+                    <div class="alltitle">旅行社个数</div>
+                    <div class="allnav" id="echart4"></div>
+                    <div class="boxfoot"></div>
+                </div>
+                <div class="boxall" style="height: 3.2rem">
+                    <div class="alltitle">贵州旅游总人次</div>
+                    <div class="allnav" id="echart5"></div>
+                    <div class="boxfoot"></div>
+                </div>
+                <div class="boxall" style="height: 3rem">
+                    <div class="alltitle">旅游外汇收入构成</div>
+                    <div class="allnav" id="echart6"></div>
+                    <div class="boxfoot"></div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="back"></div>
+
+
+    <script type="text/javascript" src="js/china.js"></script>
+    <script type="text/javascript" src="js/area_echarts.js"></script>
+
+ 
+</body>
+</html>
